@@ -1,0 +1,72 @@
+roll=input("Enter Roll Number: ")
+name=input("Enter Your Name: ")
+age=input("Enter your Age: ")
+gender=input("Enter your Gender: ")
+Class=input('Enter Your Class: ')
+total=500
+math=input("Enter your Maths Number: ")
+urdu=input("Enter your Urdu Number: ")
+english=input("Enter your English Number: ")
+chemistry=input("Enter your Chemistry Number: ")
+pysics=input("Enter your Physics Number: ")
+count=0
+subfail=" "
+if int(math) < 33:
+    count+=1
+    subfail+=" Math "
+if int(urdu) < 33:
+    count+=1
+    subfail += " Urdu "
+if int(english) < 33:
+    count+=1
+    subfail += " English "
+if int(chemistry) < 33:
+    count+=1
+    subfail += " Chemistry "
+if int(pysics) < 33:
+    count+=1
+    subfail += " Pysics "
+obtained=int(math)+int(urdu)+int(english)+int(chemistry)+int(pysics)
+percentage=(obtained/500)*100
+grade=" "
+remarks=" "
+if percentage>=80:
+    grade="A-1 "
+    remarks="Excellent Result"
+elif percentage>=70:
+    grade="A"
+    remarks = "Good Result"
+elif percentage>=60:
+    grade="B"
+    remarks = "Fair Result"
+elif percentage>=50:
+    grade="C"
+    remarks = "Normal Result"
+elif percentage>=40:
+    grade="D"
+    remarks = "Poor Result"
+elif percentage>=33:
+    grade="E"
+    remarks = "Need to improve your result"
+else:
+    grade="Fail..!"
+    remarks = "Work Hard for Success..!"
+print("----------------Mark Sheet----------------")
+print("Your Name is: "+name)
+print("Your Roll Number is: "+roll)
+print("Your Age is: "+age)
+print("Your Gender is: "+gender)
+print("Your Class: "+Class)
+print("Total Marks: "+str(total))
+print("Obtained Marks are: "+str(obtained))
+print("Overall Percentage is: "+str(percentage))
+print("Your Garde is: "+grade)
+print("Remarks: "+remarks)
+if count>0:
+    print("Total number of failed subjects: " + str(count))
+    print("Failed Subjects are " + subfail)
+
+    
+    
+
+

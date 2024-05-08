@@ -1,0 +1,35 @@
+import datetime
+print()
+r_name="A-1 Peshawari Hotal"
+address1="S-2/23 Hanif SRE."
+address2="Karsaz Karachi."
+print('Restaurant Name: '+r_name)
+print('Address1 : '+address1)
+print('Address2 : '+address2)
+time=datetime.datetime.now()
+print(time)
+print("------------------------------------------")
+print("Table: 201   chk# 9999    Guest: 02")
+print("------------------------------------------")
+malae_boti=40.23
+tika=12.51
+biryani=30.01
+cold_drink=5.2
+print('Malae Boti :'+str(malae_boti))
+print('Tikka :'+str(tika))
+print('Chicken Biryani :'+str(biryani))
+print('Cold Drink :'+str(cold_drink))
+print()
+total=malae_boti+tika+biryani+cold_drink
+tax=total*0.10
+discount=total*0.05
+overall=(total+tax)-discount
+print('Total :'+str(total))
+print('Tax :'+str(tax))
+print('Discount :'+str(discount))
+print('Total Due :'+str(overall))
+print()
+print("------------------------------------------")
+print('THANKS FOR DINING WITH US|')
+print('PLEASE COME AGAIN')
+

@@ -1,0 +1,13 @@
+import math
+print("--------------Print Squares--------------")
+print("This Function is Printing Squares  "
+      "\nForm Starting point to ending Point")
+start = int(input("Enter the starting value: "))
+end = int(input("Enter the Ending Value: "))
+end+=1
+while start<end:
+    print("Squares of: "+str(start)+" is "+str(int(math.pow(start,2))))
+    start+=1
+
+
+

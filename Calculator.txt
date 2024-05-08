@@ -1,0 +1,42 @@
+def addition(num1,num2):
+    add=num1+num2
+    print("Addition is: "+str(add))
+
+def subtraction(num1, num2):
+    sub = num1 - num2
+    print("Subtraction is: " + str(sub))
+
+def Multiplication(num1, num2):
+    mul = num1 * num2
+    print("Multiplication is: " + str(mul))
+
+def Division(num1, num2):
+    div = num1 / num2
+    print("Division is: " + str(div))
+a=True
+while a == True:
+    print("--------------------CALCULATOR--------------------")
+    Num1=int(input("Enter First Number: "))
+    Num2=int(input("Enter Second Number: "))
+    print("Press 1 for Addition")
+    print("Press 2 for Subtraction")
+    print("Press 3 for Multiplication")
+    print("Press 4 for Division")
+    ans=int(input())
+    if ans==1:
+        addition(Num1,Num2)
+    elif ans==2:
+        subtraction(Num1,Num2)
+    elif ans==3:
+        Multiplication(Num1,Num2)
+    elif ans==4:
+        Division(Num1,Num2)
+    else:
+        print("Invalid Input...!!")
+    print("Do You Want to Run Again..!")
+    print("Type yes or no")
+    ans1=input().lower()
+    if ans1 == "yes":
+        continue
+    else:
+        break

@@ -1,0 +1,16 @@
+print('--------Check Integer is Even or Odd----------')
+x=True
+while x==True:
+    a = int(input("Enter an Integer: "))
+    if a == None:
+        print("Enter the Integer First.!")
+    elif a%2==0:
+        print(str(a)+" is Even. ")
+    else:
+        print(str(a)+"  is Odd.")
+    print('Do you want to check Again ?')
+    condition = input('Type yes ro no: ').lower()
+    if condition == 'yes':
+        continue
+    else:
+        break

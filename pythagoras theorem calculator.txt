@@ -1,0 +1,42 @@
+import math
+print('----------Pythagoras theorem----------')
+def hyp(x,y):
+    z=x*x+y*y
+    result=math.sqrt(z)
+    print("Hypotenuse is: "+str(result))
+def per(x,y):
+    z=x*x-y*y
+    t = math.fabs(z)
+    result = math.sqrt(t)
+    print('Perpendicular is: '+str(result))
+def base(x,y):
+    z=x*x-y*y
+    t=math.fabs(z)
+    result=math.sqrt(t)
+    print('Base is: '+str(result))
+i=True
+while i==True:
+    print('Press 1 to find Hypotenuse')
+    print('Press 2 to find Perpendicular')
+    print('Press 3 to find Base')
+    ans=int(input())
+    if ans == 1:
+        a=int(input('Enter perpendicular: '))
+        b=int(input('Enter Base: '))
+        hyp(a,b)
+    elif ans == 2:
+        a=int(input('Enter Hypotenuse: '))
+        b=int(input('Enter Base: '))
+        per(a,b)
+    elif ans == 3:
+        a = int(input('Enter perpendicular: '))
+        b = int(input('Enter Hypotenuse: '))
+        base(a,b)
+    else:
+        print("Invalid Input..!")
+    print('Do you want to check Again ?')
+    condition=input('Type yes ro no: ').lower()
+    if condition== 'yes':
+        continue
+    else:
+        break

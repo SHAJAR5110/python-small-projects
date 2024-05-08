@@ -1,0 +1,27 @@
+print("--------------Check Vowels--------------")
+a = True
+while a==True:
+    alphabet = input("Enter a Alphabet: ")
+    if alphabet == "aeiou" or alphabet == "AEIOU":
+        print(alphabet + " is Vowel")
+    elif alphabet != alphabet[0]:
+        print("Only Alphabets are Allowed..!")
+    else:
+        if alphabet == "a" or alphabet == "A":
+            print(alphabet+" is Vowel")
+        elif alphabet == "e" or alphabet == "E":
+            print(alphabet+" is Vowel")
+        elif alphabet == "i" or alphabet == "I":
+            print(alphabet+" is Vowel")
+        elif alphabet == "o" or alphabet == "O":
+            print(alphabet+" is Vowel")
+        elif alphabet == "u" or alphabet == "U":
+            print(alphabet+" is Vowel")
+        else:
+            print("Not a Vowel..!")
+        print('Do you want to Check Again ?')
+        condition = input('Type yes ro no: ').lower()
+        if condition == 'yes':
+            continue
+        else:
+            break
